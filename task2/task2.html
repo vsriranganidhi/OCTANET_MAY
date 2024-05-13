@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To-Do List</title>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="task2.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>To-Do List</h1>
+    <div class="add-task">
+      <div class="input-wrapper">
+        <input type="text" id="taskInput" placeholder="Add New Task">
+      </div>
+      <div class="input-wrapper">
+        <select id="prioritySelect">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+      </div>
+      <div class="input-wrapper">
+        <input type="text" id="datepicker" placeholder="Due Date (dd-mm-yyyy)">
+        <span id="datepickerIcon" class="datepicker-icon">📅</span>
+      </div>
+      <button onclick="addTask()">Add</button>
+    </div>
+    <ul id="taskList"></ul>
+  </div>
+  
+  
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script src="task2.js"></script>
+</body>
+</html>
